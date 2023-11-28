@@ -31,6 +31,9 @@ body{
             cursor: pointer;
         }
     }
+    .git{
+        fill:#90a0d9;
+    }
     .singelSkillWrapper{
         a{
             background-color: #2a2f4c;
@@ -46,8 +49,7 @@ body{
             background: #bdbddd;
         }
     }
-    .navbar
-{
+    .navbar{
     display: flex;
     width: 98vw;
     padding: 40px 15%;
@@ -95,10 +97,16 @@ body{
             }
         }
     }
+    
 }
+
 }
 .light{
     background-color: #fff ;
+
+    .git{
+        fill:#2978b5;
+    }
 
     .navbar {
         a{

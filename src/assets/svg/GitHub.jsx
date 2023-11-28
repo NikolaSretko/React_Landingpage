@@ -2,7 +2,7 @@
 
 const GitHub = () => {
     return ( 
-        <svg className="gitHub" 
+        <svg className="git" 
         xmlns="http://www.w3.org/2000/svg" 
         width="42" 
         height="42" 
