@@ -2,7 +2,7 @@ import Nav from './Nav';
 import './Header.scss'
 import Button from '../button/Button';
 import GitHub from '../../assets/svg/GitHub';
-import Sass from '../../assets/svg/Sass';
+import In from '../../assets/svg/In';
 
 const Header = ({ setzeDenLightModus }) => {
 
@@ -14,10 +14,11 @@ const Header = ({ setzeDenLightModus }) => {
             />
             <h1>Hi, I am <span>Nikola Sretkovic.</span></h1>
             <h2>A Front End Developer.</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam praesentium porro nemo? Officiis suscipit aut unde architecto velit accusamus nesciunt sed eveniet voluptatum, facere quae earum inventore cupiditate non sequi!</p>
+            <p>Hello, I'm Nikola Sretkovic, a skilled photo and media designer, music producer, and recently, I've ventured into Frontend Web Development, with plans to become a certified Fullstack Developer in the coming months. I'm actively seeking exciting projects, so feel free to drop me an email to explore more about my diverse skills and experiences.</p>
             <Button 
                 text="resume"/>
-                <GitHub/>
+                <a href="https://github.com/NikolaSretko"><GitHub/></a>
+                <a href="#"><In/></a>                
         </header>
         </div>
     );

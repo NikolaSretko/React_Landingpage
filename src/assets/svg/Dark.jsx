@@ -1,6 +1,7 @@
 const Dark = () => {
     return (
-      <svg className="modeIcon"
+      <svg 
+        className="modeIcon"
         width="21"
         height="22"
         viewBox="0 0 21 22"

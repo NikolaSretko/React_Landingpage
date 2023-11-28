@@ -9,7 +9,6 @@ import './Home.scss'
 
 const Home = () => {
     const [lightMode, setlightMode] = useState(false);
-    console.log(lightMode);
     
     return ( 
         <div 
