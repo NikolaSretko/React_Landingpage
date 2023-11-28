@@ -1,0 +1,43 @@
+.footerContainer
+{
+    margin-top: 62px;
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+
+    h2
+    {
+        font-size: 2.375rem;
+    }
+    
+    .button
+    {
+        display: block;
+        margin-bottom: 62px;
+    }
+    
+    .created
+    {
+        font-weight: 700;
+        position: relative;
+        
+        &::after 
+        {
+            content: "";
+            position: absolute;
+            background-color: #cdcdff;
+            height: 3px;
+            width: 0;
+            left: 0;
+            bottom: -8px;
+            transition: all 0.2s linear;
+        }
+        
+        &:hover::after 
+        {
+            width: 100%;
+        }
+    }
+}
