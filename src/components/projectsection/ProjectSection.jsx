@@ -33,6 +33,16 @@ const ProjectSection = () => {
             projectDescription="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et iste impedit corporis provident doloremque aut, iusto optio ut repellendus sint?"
             technologies={[<React/>, <JavaScript/>, <Tailwind/>]}
             />
+            <Project
+            projectTitle="Project 5"
+            projectDescription="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et iste impedit corporis provident doloremque aut, iusto optio ut repellendus sint?"
+            technologies={[<React/>, <JavaScript/>, <Sass/>]}
+            />
+            <Project
+            projectTitle="Project 6"
+            projectDescription="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et iste impedit corporis provident doloremque aut, iusto optio ut repellendus sint?"
+            technologies={[<React/>, <JavaScript/>, <CSS/>]}
+            />
             </div>  
         </section>
     );
