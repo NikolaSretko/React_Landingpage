@@ -1,7 +1,7 @@
 import uuid4 from "uuid4";
 import './Project.scss'
 
-const Project = ({ projectTitle , projectDescription , technologies }) => {
+const Project = ({ projectTitle , projectDescription , technologies, repo, demo }) => {
     return ( 
             <article className="projectCard">
                 <h3>{projectTitle}</h3>
@@ -10,6 +10,10 @@ const Project = ({ projectTitle , projectDescription , technologies }) => {
                     {technologies.map((tech) => (
                         <p key={uuid4()}> { tech } </p>
                     ))}
+                </div>
+                <div>
+                <p>{demo}</p>
+                <p>{repo}</p>
                 </div>
             </article>
     );
