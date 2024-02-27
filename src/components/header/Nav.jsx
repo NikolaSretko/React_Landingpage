@@ -11,15 +11,6 @@ const Nav = ({ setzeDenLightModus }) => {
         <nav className='navbar'>
             <a href="#">SN.</a>
             <ul>
-                <li>
-                    <a href="#">projects</a>
-                </li>
-                <li>
-                    <a href="#">skills</a>
-                </li>
-                <li>
-                    <a href="#">contact</a>
-                </li>
                 <div onClick={toggleLightMode}>
                 <Dark/>
                 </div>

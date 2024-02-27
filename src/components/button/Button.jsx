@@ -1,7 +1,7 @@
 import './Button.scss'
 const Button = ({ text }) => {
     return ( 
-        <button className='button'>{text}</button>
+        <a className="button" target="_blank" href="../../../public/Nikola Sretkovic CV .pdf">CV</a>
     );
 }
 

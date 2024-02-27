@@ -6,7 +6,8 @@ const ContactSection = () => {
     return ( 
         <section className="footerContainer">
             <h2>CONTACT</h2>
-            <Button text="email me"/>
+            <p >nikola.sretkovic99@gmail.com
+            </p>
             
         </section>
      );

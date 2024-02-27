@@ -12,14 +12,15 @@ const Header = ({ setzeDenLightModus }) => {
             <Nav
             setzeDenLightModus={setzeDenLightModus}
             />
-            <h1>Hi, I am <span>Nikola Sretkovic.</span></h1>
-            <h2>A Front End Developer.</h2>
-            <p>Hello, I'm Nikki, a skilled photo and media designer, music producer, and recently, I've ventured into Frontend Web Development, with plans to become a certified Fullstack Developer in the coming months. I'm actively seeking exciting projects, so feel free to drop me an email to explore more about my diverse skills and experiences.
-                You mean what I know
+            <h1>Hi, ich bin  <span>Nikola Sretkovic.</span></h1>
+            <h2>Fullstack Developer.</h2>
+            <p>
+Hallo, ich bin Nikki, eine erfahrene Foto- und Mediendesignerin, Musikproduzentin und neuerdings Frontend-Webentwicklerin, die sich zum Ziel gesetzt hat, bis zum 22. März eine zertifizierte Fullstack-Entwicklerin im MERN-Stack zu werden. Meine Reise hat mich kürzlich zur großen Liebe für das Backend geführt, gerade als ich den Backend-Teil meines Studiums abschließe. Diese Entdeckung hat meine Begeisterung für technische Herausforderungen und Problemlösungen geweckt. Ich bin aktiv auf der Suche nach spannenden Projekten, die meine vielfältigen Fähigkeiten herausfordern, also zögern Sie nicht, Kontakt aufzunehmen, um mehr zu erfahren.
             </p>
-            <Button text="resume"/>
-            <a href="https://github.com/NikolaSretko"><GitHub/></a>
-            <a href="#"><In/></a>                
+            <Button text="CV"
+            target="_blank" href="/Nikola Sretkovic CV .pdf"
+            />
+            <a target="_blank" href="https://www.linkedin.com/in/nikola-sretkovic-aa8b322a7/"><In/></a>                
         </header>
         </div>
     );
