@@ -24,7 +24,6 @@ const Header = ({ setzeDenLightModus }) => {
           Projekten, die meine vielfältigen Fähigkeiten herausfordern. Zögern
           Sie nicht, Kontakt aufzunehmen, um mehr zu erfahren.
         </p>
-        y
         <a
           target="_blank"
           href="https://www.linkedin.com/in/nikola-sretkovic-aa8b322a7/"
