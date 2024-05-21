@@ -35,7 +35,7 @@ const ProjectSection = () => {
         />
         <Project
           projectTitle="Pokedex"
-          projectDescription="Ein Teamprojekt, das eine Pokedex-API nutzt. Ich war Zuständig für die Hauptseite, Implementierung des Dark Modes und Erstellung von CSS-Animationen für eine interaktive Nutzererfahrung."
+          projectDescription="Ein Teamprojekt, das eine Pokedex-API nutzt. Ich war zuständig für die Hauptseite, einschließlich der Implementierung des Dark Modes und der Erstellung von CSS-Animationen. Diese Animationen sorgen für eine interaktive und ansprechende Nutzererfahrung. Zusätzlich habe ich sicher gestellt, dass die Hauptseite sowohl funktional als auch ästhetisch ansprechend ist, wodurch die Benutzerfreundlichkeit und das visuelle Erlebnis verbessert wurden."
           technologies={[<React />, <JavaScript />, <Sass />]}
           repo={
             <a
@@ -53,7 +53,7 @@ const ProjectSection = () => {
         />
         <Project
           projectTitle="Sport DB"
-          projectDescription=" Ein Gruppenprojekt, das eine öffentliche Sport-API nutzt, um verschiedene Sportarten zu explorieren. Mein Beitrag umfasste das Datenfetching von der API und die Implementierung eines Dropdown-Menüs für eine intuitive Navigation."
+          projectDescription=" Ein Gruppenprojekt, das eine öffentliche Sport-API nutzt, um verschiedene Sportarten zu explorieren. Mein Beitrag umfasste das Datenfetching von der API sowie die Implementierung eines benutzerfreundlichen Dropdown-Menüs für eine intuitive Navigation. Zusätzlich habe ich die API-Daten so aufbereitet, dass sie leicht verständlich und optisch ansprechend präsentiert werden, was die Nutzererfahrung erheblich verbessert hat."
           technologies={[<React />, <JavaScript />, <Sass />]}
           repo={
             <a target="blank" href="https://github.com/KWiefel/SportsDB">
