@@ -17,7 +17,7 @@ const ProjectSection = () => {
       <div>
         <Project
           projectTitle="TOKTOK(Mobile)"
-          projectDescription="Eine MERN-Stack-Anwendung zum Anzeigen, Erstellen, Bearbeiten und Favorisieren von Posts. Ich habe die Struktur für das Frontend aufgesetzt und das leistungsstarke Backend eigenständig mit Express und MongoDB entwickelt."
+          projectDescription="Unsere mobile App, gebaut im MERN-Stack, bietet eine sichere und skalierbare Plattform zum Teilen von Fotos. Ich war hauptsächlich für das robuste Backend zuständig, das Sicherheit und Performance gewährleistet. Zusätzlich habe ich das Frontend und die Fotofunktionen in der Endphase übernommen, um ein nahtloses Benutzererlebnis zu schaffen."
           technologies={[<Sass />, <React />, <MERN />]}
           repo={
             <a
