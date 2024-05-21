@@ -18,9 +18,9 @@ const Header = ({ setzeDenLightModus }) => {
           Nach erfolgreichem Abschluss meiner Ausbildung und meiner
           Zertifizierung am 22. März arbeite ich jetzt als
           Fullstack-Softwareentwickler bei einem Unternehmen. Meine Reise hat
-          mich zur großen Liebe für das Backend geführt und meine Begeisterung
-          für technische Herausforderungen und Problemlösungen weiter
-          gesteigert. Ich bin immer auf der Suche nach neuen, spannenden
+          mich zu einer großen Liebe für das Backend geführt und meine
+          Begeisterung für technische Herausforderungen und Problemlösungen
+          weiter gesteigert. Ich bin immer auf der Suche nach neuen, spannenden
           Projekten, die meine vielfältigen Fähigkeiten herausfordern. Zögern
           Sie nicht, Kontakt aufzunehmen, um mehr zu erfahren.
         </p>
