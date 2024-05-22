@@ -2,6 +2,7 @@ import Nav from "./Nav";
 import "./Header.scss";
 import Button from "../button/Button";
 import In from "../../assets/svg/In";
+import XING from "../../assets/svg/XING";
 
 const Header = ({ setzeDenLightModus }) => {
   return (
@@ -29,6 +30,12 @@ const Header = ({ setzeDenLightModus }) => {
           href="https://www.linkedin.com/in/nikola-sretkovic-aa8b322a7/"
         >
           <In />
+        </a>
+        <a
+          href="https://www.xing.com/profile/Nikola_Sretkovic059456/web_profiles"
+          target="blank"
+        >
+          <XING />
         </a>
       </header>
     </div>
