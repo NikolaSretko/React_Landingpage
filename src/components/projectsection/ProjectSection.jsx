@@ -14,7 +14,7 @@ const ProjectSection = () => {
       <div>
         <Project
           projectTitle="TOKTOK(Mobile)"
-          projectDescription="Unsere mobile App, gebaut im MERN-Stack, bietet eine sichere und skalierbare Plattform zum Teilen von Fotos. Ich war hauptsächlich für das robuste Backend zuständig, das Sicherheit und Performance gewährleistet. Zusätzlich habe ich das Frontend und die Fotofunktionen in der Endphase übernommen, um ein nahtloses Benutzererlebnis zu schaffen. Da wir einen kostenlosen NoSQL-Dienstleister verwenden, kann das initiale Laden der mobilen Web-App verzögert sein. In dieser Zeit kann man über den Desktop bereits die mobile Ansicht aktivieren."
+          projectDescription="Unsere mobile App, gebaut im MERN-Stack, bietet eine sichere und skalierbare Plattform zum Teilen von Fotos. Ich war hauptsächlich für das robuste Backend zuständig, das Sicherheit und Performance gewährleistet. Zusätzlich habe ich das Frontend und die Fotofunktionen in der Endphase übernommen, um ein nahtloses Benutzererlebnis zu schaffen. Da wir einen kostenlosen NoSQL-Dienstleister verwenden, kann das initiale Laden der mobilen Web-App verzögert sein."
           technologies={[
             <Sass key="sass" />,
             <React key="react" />,
