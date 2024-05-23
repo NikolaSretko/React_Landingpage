@@ -4,6 +4,7 @@ import './Header.scss';
 import Button from '../button/Button';
 import In from '../../assets/svg/In';
 import XING from '../../assets/svg/XING';
+import GitHub from '../../assets/svg/GitHub';
 
 const Header = ({ setzeDenLightModus }) => {
   return (
@@ -31,6 +32,9 @@ const Header = ({ setzeDenLightModus }) => {
             <Button />
           </a>
         </div>
+        <a
+        target='blank'
+         href="https://github.com/NikolaSretko"><GitHub/></a>
         <a
           href="https://www.xing.com/profile/Nikola_Sretkovic059456/web_profiles"
           target="blank"
