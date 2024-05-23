@@ -1,8 +1,9 @@
-import Nav from "./Nav";
-import "./Header.scss";
-import Button from "../button/Button";
-import In from "../../assets/svg/In";
-import XING from "../../assets/svg/XING";
+import PropTypes from 'prop-types';
+import Nav from './Nav';
+import './Header.scss';
+import Button from '../button/Button';
+import In from '../../assets/svg/In';
+import XING from '../../assets/svg/XING';
 
 const Header = ({ setzeDenLightModus }) => {
   return (
@@ -25,9 +26,14 @@ const Header = ({ setzeDenLightModus }) => {
           Projekten, die meine vielfältigen Fähigkeiten herausfordern. Zögern
           Sie nicht, Kontakt aufzunehmen, um mehr zu erfahren.
         </p>
+        <div className="buttonContainer">
+          <a href="">
+            <Button />
+          </a>
+        </div>
         <a
-          target="_blank"
-          href="https://www.linkedin.com/in/nikola-sretkovic-aa8b322a7/"
+          href="https://www.xing.com/profile/Nikola_Sretkovic059456/web_profiles"
+          target="blank"
         >
           <In />
         </a>
@@ -40,6 +46,11 @@ const Header = ({ setzeDenLightModus }) => {
       </header>
     </div>
   );
+};
+
+// Definieren der PropTypes für die Header-Komponente
+Header.propTypes = {
+  setzeDenLightModus: PropTypes.func.isRequired,
 };
 
 export default Header;
