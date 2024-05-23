@@ -1,227 +1,212 @@
 //#fff;  #444;  #2978b5;
 
+body {
+  font-family: 'poppins-rg';
+  background-color: #23283e;
 
-
-body{
-    font-family: "poppins-rg";
-    background-color: #23283e;
-
-    .navbar {
-        a{
-            color: #90a0d9;
-        }
-        &::after{
-            background-color: #cdcdff;
-        }
+  .navbar {
+    a {
+      color: #90a0d9;
     }
-    h3{
+    &::after {
+      background-color: #cdcdff;
+    }
+  }
+  h3 {
     font-size: 24px;
-    }
-    h1, h2, h3{
+  }
+  h1,
+  h2,
+  h3 {
     color: #cdcdff;
-    font-family: "poppins-bd";
-    }
-    p, a{
+    font-family: 'poppins-bd';
+  }
+  p,
+  a {
     color: #bdbddd;
-    }
-    .modeIcon{
-        fill:#90a0d9;
+  }
+  .modeIcon {
+    fill: #90a0d9;
 
-        &:hover{
-            cursor: pointer;
-        }
+    &:hover {
+      cursor: pointer;
     }
-    .git{
-        fill:#90a0d9;
+  }
+  .git {
+    fill: #90a0d9;
+  }
+  .singelSkillWrapper {
+    a {
+      background-color: #2a2f4c;
     }
-    .singelSkillWrapper{
-        a{
-            background-color: #2a2f4c;
-        }
+  }
+  .button {
+    color: #90a0d9;
+    border-color: #bdbddd;
+    &:hover {
+      color: #23283e;
     }
-    .button{
-        color: #90a0d9;
-        border-color: #bdbddd;
-        &:hover{
-            color: #23283e;
-        }
-        &::before{
-            background: #bdbddd;
-        }
+    &::before {
+      background: #bdbddd;
     }
-    .navbar{
+  }
+  .navbar {
     display: flex;
     width: 98vw;
     padding: 40px 15%;
     justify-content: space-between;
 
-    
-    a
-    {
+    a {
+      text-decoration: none;
+      font-size: 1.5rem;
+      color: #90a0d9;
+      align-self: center;
+      font-family: 'poppins-bd';
+    }
+
+    ul {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+
+      li a {
+        font-size: 1.125rem;
+
         text-decoration: none;
-        font-size: 1.5rem;
-        color: #90a0d9;
-        align-self: center;
-        font-family: "poppins-bd";
-    }
+        font-family: 'poppins-rg', sans-serif;
+        position: relative;
 
-    ul
-    {
-        display: flex;
-        gap: 24px;
-        list-style: none;
-        
-        li a
-        {
-            font-size: 1.125rem;
-
-            text-decoration: none;
-            font-family: "poppins-rg", sans-serif;
-            position: relative;
-
-            &::after
-            {
-                content: "";
-                position: absolute;
-                background-color: #cdcdff;
-                height: 3px;
-                width: 0;
-                left: 0;
-                bottom: -8px;
-                transition: all 0.2s linear;
-            }
-
-            &:hover::after
-            {
-                width: 100%;
-            }
+        &::after {
+          content: '';
+          position: absolute;
+          background-color: #cdcdff;
+          height: 3px;
+          width: 0;
+          left: 0;
+          bottom: -8px;
+          transition: all 0.2s linear;
         }
+
+        &:hover::after {
+          width: 100%;
+        }
+      }
     }
-    
+  }
 }
+.light {
+  background-color: #fff;
 
-}
-.light{
-    background-color: #fff ;
+  .git {
+    fill: #2978b5;
+  }
 
-    .git{
-        fill:#2978b5;
+  .navbar {
+    a {
+      color: #2978b5;
     }
-
-    .navbar {
-        a{
-            color: #2978b5;
-        }
-        &::after{
-            background-color: #2978b5;
-        }
+    &::after {
+      background-color: #2978b5;
     }
+  }
 
-    h1{
-        color: #444;
-    }
+  h1 {
+    color: #444;
+  }
 
-    h2{
-        color: #444;
-    }
+  h2 {
+    color: #444;
+  }
 
-    h1 span{
+  h1 span {
     color: #2978b5;
-    }
+  }
 
-    h3{
-        color: #444;
-    }
+  h3 {
+    color: #444;
+  }
 
-    p{
-        color: #444;
-    }
+  p {
+    color: #444;
+  }
 
-    a{
+  a {
+    color: #2978b5;
+  }
+  ul {
+    color: #2978b5;
+  }
+
+  .button {
+    color: #2978b5;
+    border-color: #2978b5;
+    &:hover {
+      color: #fff;
+    }
+    &::before {
+      background: #2978b5;
+    }
+  }
+
+  .modeIcon {
+    fill: #2978b5;
+  }
+
+  .singelSkillWrapper {
+    a {
+      background-color: #fff;
+      color: #444;
+      &:hover {
         color: #2978b5;
+      }
     }
-    ul{
-        color: #2978b5;
-    }
+  }
 
-    .button{
-        color: #2978b5 ;
-        border-color: #2978b5;
-        &:hover{
-            color: #fff;
-        }
-        &::before{
-            background: #2978b5;
-        }
-    }
+  .autor {
+    color: #2978b5;
+  }
 
-    .modeIcon{
-        fill: #2978b5;
-    }
-
-    .singelSkillWrapper{
-        a{
-            background-color: #fff;
-            color: #444;
-            &:hover{
-                color: #2978b5;
-            }
-        }
-    }
-
-    .autor{
-        color: #2978b5;
-    }
-
-    .navbar
-{
+  .navbar {
     display: flex;
     width: 98vw;
     padding: 40px 15%;
     justify-content: space-between;
 
-    
-    a
-    {
+    a {
+      text-decoration: none;
+      font-size: 1.5rem;
+      color: #2978b5;
+      align-self: center;
+      font-family: 'poppins-bd';
+    }
+
+    ul {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+
+      li a {
+        font-size: 1.125rem;
+
         text-decoration: none;
-        font-size: 1.5rem;
-        color: #2978b5;
-        align-self: center;
-        font-family: "poppins-bd";
-    }
+        font-family: 'poppins-rg', sans-serif;
+        position: relative;
 
-    ul
-    {
-        display: flex;
-        gap: 24px;
-        list-style: none;
-        
-        li a
-        {
-            font-size: 1.125rem;
-
-            text-decoration: none;
-            font-family: "poppins-rg", sans-serif;
-            position: relative;
-
-            &::after
-            {
-                content: "";
-                position: absolute;
-                background-color: #2978b5;
-                height: 3px;
-                width: 0;
-                left: 0;
-                bottom: -8px;
-                transition: all 0.2s linear;
-            }
-
-            &:hover::after
-            {
-                width: 100%;
-            }
+        &::after {
+          content: '';
+          position: absolute;
+          background-color: #2978b5;
+          height: 3px;
+          width: 0;
+          left: 0;
+          bottom: -8px;
+          transition: all 0.2s linear;
         }
-    }
-}
-}
 
+        &:hover::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
