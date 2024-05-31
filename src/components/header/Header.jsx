@@ -34,7 +34,7 @@ const Header = ({ setzeDenLightModus }) => {
         </div>
         <a
         target='blank'
-         href="https://github.com/NikolaSretko"><GitHub/></a>
+        href="https://github.com/NikolaSretko"><GitHub/></a>
         <a
           href="https://www.xing.com/profile/Nikola_Sretkovic059456/web_profiles"
           target="blank"

@@ -29,4 +29,9 @@
         justify-content: start;
         width: 200px;
     }
+    @media (min-width: 2560px) {
+        width: 350px;
+        justify-content: center;
+        margin: 0 auto;
 }
+}   
