@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import Nav from './Nav';
 import './Header.scss';
-import Button from '../button/Button';
 import In from '../../assets/svg/In';
 
 import GitHub from '../../assets/svg/GitHub';
@@ -14,24 +13,15 @@ const Header = ( ) => {
         <h1>
           Hi, ich bin <span>Nikola Sretkovic.</span>
         </h1>
-        <h2>Fullstack Developer.</h2>
+        <h2>Fullstack Developer, Projekt Manager und Consultant</h2>
         <p>
-          Hallo, ich bin Nikki, ein erfahrener Foto- und Mediendesigner,
-          Musikproduzent und zertifizierter Fullstack-Entwickler im MERN-Stack.
-          Nach erfolgreichem Abschluss meiner Ausbildung und meiner
-          Zertifizierung am 22. März arbeite ich jetzt als
-          Fullstack-Softwareentwickler bei einem führenden Unternehmen für
-          Lohnbuchhaltungs- und Zeitwirtschaftssysteme. Meine Reise hat meine
-          Begeisterung für technische Herausforderungen und Problemlösungen
-          weiter gesteigert. Ich bin immer auf der Suche nach neuen, spannenden
-          Projekten, die meine vielfältigen Fähigkeiten herausfordern. Zögern
-          Sie nicht, Kontakt aufzunehmen, um mehr zu erfahren.
+          Hallo, ich bin Nikola – leidenschaftlicher Fullstack-Entwickler, Mediendesigner und kreativer Problemlöser.
+In den letzten Jahren durfte ich für verschiedene Unternehmen spannende Projekte umsetzen und dabei wertvolle Erfahrungen sammeln – vom Aufbau komplexer Webanwendungen bis hin zur technischen Beratung im Einsatz neuer Tools.
+
+Ich habe ein starkes Gespür dafür entwickelt, mich blitzschnell in neue Systeme einzuarbeiten und Unternehmen dabei zu unterstützen, moderne Technologien effizient und praxisnah in bestehende Prozesse zu integrieren. Besonders die Kombination aus technischer Tiefe und nutzerzentriertem Design begeistert mich jeden Tag aufs Neue.
+
+Lass uns gerne sprechen, wenn du Impulse, Umsetzungspower oder kreative Lösungen brauchst.
         </p>
-        <div className="buttonContainer">
-          <a href="">
-            <Button />
-          </a>
-        </div>
         <a
         target='blank'
         href="https://github.com/NikolaSretko"><GitHub/></a>
