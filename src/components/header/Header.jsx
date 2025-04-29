@@ -3,14 +3,14 @@ import Nav from './Nav';
 import './Header.scss';
 import Button from '../button/Button';
 import In from '../../assets/svg/In';
-import XING from '../../assets/svg/XING';
+
 import GitHub from '../../assets/svg/GitHub';
 
-const Header = ({ setzeDenLightModus }) => {
+const Header = ( ) => {
   return (
     <div>
       <header className="headerContainer">
-        <Nav setzeDenLightModus={setzeDenLightModus} />
+        <Nav  />
         <h1>
           Hi, ich bin <span>Nikola Sretkovic.</span>
         </h1>
@@ -40,12 +40,6 @@ const Header = ({ setzeDenLightModus }) => {
           target="blank"
         >
           <In />
-        </a>
-        <a
-          href="https://www.xing.com/profile/Nikola_Sretkovic059456/web_profiles"
-          target="blank"
-        >
-          <XING />
         </a>
       </header>
     </div>

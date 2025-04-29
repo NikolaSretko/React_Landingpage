@@ -1,78 +1,196 @@
+import { useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { EffectCards, Navigation, Pagination } from 'swiper/modules';
+import { Card, Typography, Tag, Button, Space, Modal } from 'antd';
+import { motion } from 'framer-motion';
+import ReactPlayer from 'react-player';
 import GitHub from '../../assets/svg/GitHub';
 import JavaScript from '../../assets/svg/JavaScript';
 import Link from '../../assets/svg/Link';
 import MERN from '../../assets/svg/MERN';
 import React from '../../assets/svg/React';
 import Sass from '../../assets/svg/SCSS';
-import Project from './Project';
 import './ProjectSection.scss';
 
+const { Title, Paragraph, Text } = Typography;
+
 const ProjectSection = () => {
+  const [currentVideo, setCurrentVideo] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const showVideoModal = (videoUrl) => {
+    setCurrentVideo(videoUrl);
+    setIsModalOpen(true);
+  };
+
+  const handleCancel = () => {
+    setIsModalOpen(false);
+    setCurrentVideo(null);
+  };
+
+  const projectData = [
+    {
+      id: 1,
+      title: "TOKTOK (Mobile)",
+      client: "Abschlussprojekt",
+      description: "Unsere mobile App, gebaut im MERN-Stack, bietet eine sichere und skalierbare App zum Teilen von Fotos.",
+      challenge: "Implementierung eines robusten Backends mit Fokus auf Sicherheit und Performance.",
+      solution: "Entwicklung einer skalierbaren Backend-Struktur und nahtlose Integration mit dem Frontend.",
+      techStack: ["MongoDB", "Express", "React", "Node.js", "SCSS"],
+      repoUrl: "https://github.com/canyus70/FullStack-Abschluss-Projekt-TokTok",
+      liveUrl: "https://toktok-nks4.onrender.com/",
+      technologies: [<Sass key="sass" />, <React key="react" />, <MERN key="mern" />]
+    },
+    {
+      id: 2,
+      title: "Skill-Matching App",
+      client: "Vizionists GmbH",
+      description: "Entwicklung einer intelligenten Matching-Plattform zur Analyse und Empfehlung von Talenten für offene Positionen sowie zur Teamzusammenstellung im Unternehmen.",
+      challenge: "Abgleich individueller Skillsets und Persönlichkeitsmerkmale mit komplexen Jobanforderungen und bestehender Teamstruktur.",
+      solution: "Entwicklung eines datengetriebenen Analyse-Tools mit KI-gestütztem Matching auf Basis von Skills und psychologischen Profilen zur Optimierung von Recruiting und Teamdynamik.",
+      techStack: ["React", "Node.js", "GraphQL", "MongoDB", "Stripe API","OpenAI API","REST API"],
+      videoUrl: "https://res.cloudinary.com/dxphdtwvh/video/upload/v1745921488/cc-match_cLYexN7W_j9mot0.mp4", // Platzhalter
+      technologies: [<React key="react" />, <JavaScript key="javascript" />, <Sass key="sass" />]
+    },
+    {
+      id: 3,
+      title: "Instagram Content & Reservierungstool",
+      client: "Blue-Chip-Holding GmbH",
+      description: "Entwicklung eines Tools zur automatisierten Verwaltung von Instagram-Anfragen mit integriertem Reservierungssystem für Dienstleistungen.",
+      challenge: "Verarbeitung unstrukturierter Nachrichten, Zusammenführung fragmentierter Informationen und automatische Erstellung verfügbarer Buchungsoptionen.",
+      solution: " Entwicklung eines modularen Systems mit KI-gestützter Nachrichtenanalyse, Verfügbarkeitsprüfung und automatischer Terminvorschlagserstellung über eine interaktive Oberfläche.",
+      techStack: ["React", "Node.js", "MongoDB", "OpenAI API"],
+      videoUrl: "https://res.cloudinary.com/dxphdtwvh/video/upload/v1745924375/Bildschirmaufnahme_2025-04-24_um_14.54.43_c5ckud.mov", // Platzhalter
+      technologies: [<React key="react" />, <JavaScript key="javascript" />, <MERN key="mern" /> ]
+    }
+  ];
+
   return (
-    <section className="projectsContainer">
-      <h2>PROJECTS</h2>
-      <div>
-        <Project
-          projectTitle="TOKTOK(Mobile)"
-          projectDescription="Unsere mobile App, gebaut im MERN-Stack, bietet eine sichere und skalierbare App zum Teilen von Fotos. Ich war hauptsächlich für das robuste Backend zuständig, das Sicherheit und Performance gewährleistet. Zusätzlich habe ich das Frontend und die Fotofunktionen in der Endphase übernommen, um ein nahtloses Benutzererlebnis zu schaffen. Da wir einen kostenlosen Dienstleister verwenden, kann das initiale Laden der mobilen Web-App verzögern."
-          technologies={[
-            <Sass key="sass" />,
-            <React key="react" />,
-            <MERN key="mern" />,
-          ]}
-          repo={
-            <a
-              href="https://github.com/canyus70/FullStack-Abschluss-Projekt-TokTok"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <GitHub />
-            </a>
-          }
-          demo={
-            <a target="blank" href="https://toktok-nks4.onrender.com/">
-              <Link />
-            </a>
-          }
-        />
-        <Project
-          projectTitle="Pokedex"
-          projectDescription="Ein Teamprojekt, das eine Pokedex-API nutzt. Ich war zuständig für die Hauptseite, einschließlich der Implementierung des Dark Modes und der Erstellung von CSS-Animationen. Diese Animationen sorgen für eine interaktive und ansprechende Nutzererfahrung. Zusätzlich habe ich sicher gestellt, dass die Hauptseite sowohl funktional als auch ästhetisch ansprechend ist, wodurch die Benutzerfreundlichkeit und das visuelle Erlebnis verbessert wurden."
-          technologies={[
-            <React key="react" />,
-            <JavaScript key="javascript" />,
-            <Sass key="sass" />,
-          ]}
-          repo={
-            <a
-              target="blank"
-              href="https://github.com/MoniqueHeusinger/Pokedex"
-            >
-              <GitHub />
-            </a>
-          }
-          demo={
-            <a target="blank" href="https://super-duper-pokedex.netlify.app/">
-              <Link />
-            </a>
-          }
-        />
-        <Project
-          projectTitle="Sport DB"
-          projectDescription=" Ein Gruppenprojekt, das eine öffentliche Sport-API nutzt, um verschiedene Sportarten zu explorieren. Mein Beitrag umfasste das Datenfetching von der API sowie die Implementierung eines benutzerfreundlichen Dropdown-Menüs für eine intuitive Navigation. Zusätzlich habe ich die API-Daten so aufbereitet, dass sie leicht verständlich und optisch ansprechend präsentiert werden, was die Nutzererfahrung erheblich verbessert hat."
-          technologies={[
-            <React key="react" />,
-            <JavaScript key="javascript" />,
-            <Sass key="sass" />,
-          ]}
-          repo={
-            <a target="blank" href="https://github.com/KWiefel/SportsDB">
-              <GitHub />
-            </a>
-          }
-        />
-      </div>
-    </section>
+    <motion.section 
+      className="projectsContainer"
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+    >
+      <Title level={2} className="section-title">MEINE PROJEKTE</Title>
+      
+      <Swiper
+        effect={'cards'}
+        grabCursor={true}
+        modules={[EffectCards, Navigation, Pagination]}
+        className="project-swiper"
+        navigation
+        pagination={{ clickable: true }}
+      >
+        {projectData.map((project) => (
+          <SwiperSlide key={project.id}>
+            <Card className="project-card" bordered={false}>
+              <Title level={3}>{project.title}</Title>
+              <Paragraph className="client">
+                <Text strong>Für: </Text>
+                {project.client}
+              </Paragraph>
+              
+              <div className="project-details">
+                <div className="project-info">
+                  <Paragraph>
+                    <Text strong>Beschreibung: </Text>
+                    {project.description}
+                  </Paragraph>
+                  <Paragraph>
+                    <Text strong>Herausforderung: </Text>
+                    {project.challenge}
+                  </Paragraph>
+                  <Paragraph>
+                    <Text strong>Lösung: </Text>
+                    {project.solution}
+                  </Paragraph>
+                  
+                  <div className="tech-stack">
+                    <Text strong>Tech-Stack: </Text>
+                    <div className="tech-tags">
+                      {project.techStack.map((tech) => (
+                        <Tag key={tech} color="blue">{tech}</Tag>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="project-actions">
+                  <Space direction="vertical">
+                    {project.id !== 1 && (
+                      <Button 
+                        type="primary" 
+                        onClick={() => showVideoModal(project.videoUrl)}
+                      >
+                        Video anschauen
+                      </Button>
+                    )}
+                    
+                    {project.id === 1 && (
+                      <>
+                        <Button 
+                          type="primary" 
+                          onClick={() => window.open(project.repoUrl, '_blank')}
+                        >
+                          <span style={{ display: 'flex', alignItems: 'center' }}>
+                            <span style={{ marginRight: '8px', display: 'flex' }}>
+                              <GitHub style={{ fill: 'currentColor' }} />
+                            </span>
+                            GitHub
+                          </span>
+                        </Button>
+                        <Button 
+                          type="default" 
+                          onClick={() => window.open(project.liveUrl, '_blank')}
+                        >
+                          <span style={{ display: 'flex', alignItems: 'center' }}>
+                            <span style={{ marginRight: '8px', display: 'flex' }}>
+                              <Link style={{ fill: 'currentColor' }} />
+                            </span>
+                            Live Demo
+                          </span>
+                        </Button>
+                      </>
+                    )}
+                  </Space>
+                </div>
+              </div>
+              
+              <div className="technologies">
+                {project.technologies.map((tech, index) => (
+                  <div key={index} className="tech-icon">
+                    {tech}
+                  </div>
+                ))}
+              </div>
+            </Card>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+      
+      <Modal
+        title="Projekt Demo"
+        open={isModalOpen}
+        onCancel={handleCancel}
+        footer={null}
+        width={800}
+        centered
+      >
+        {currentVideo && (
+          <div className="video-player-container">
+            <ReactPlayer 
+              url={currentVideo} 
+              width="100%" 
+              height="450px" 
+              controls
+              playing
+            />
+          </div>
+        )}
+      </Modal>
+    </motion.section>
   );
 };
 

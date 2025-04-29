@@ -1,49 +1,273 @@
 .projectsContainer {
-    margin-top: 62px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    h2 {
-        font-size: 2.375rem;
-        margin-bottom: 16px; /* Added for better spacing */
+  padding: 5rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+  .section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+    font-weight: 700;
+    font-size: 2.375rem;
+    
+    &:after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: linear-gradient(90deg, #4096ff, #1677ff);
+      margin: 0.75rem auto 0;
+      border-radius: 2px;
     }
-
-    p {
-        width: fit-content;
-        margin: 8px auto; /* Ensure consistent spacing */
+  }
+  
+  .project-swiper {
+    width: 100%;
+    height: auto;
+    padding-bottom: 3rem;
+    
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
-
-    > div {
-        display: grid;
-        width: 100%;
-        max-width: 1200px; /* Center grid with a max-width */
-        margin-inline: auto;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        gap: 40px;
+  }
+  
+  .project-card {
+    width: 100%;
+    max-width: 900px;
+    border: none;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    background: var(--card-bg, #fff);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    
+    &:hover {
+      transform: translateY(-5px);
     }
-
-    .gitHub {
-        fill: #90a0d9;
+    
+    .ant-card-body {
+      padding: 2.5rem;
     }
-
-    @media screen and (max-width: 1500px) {
-        .projectsContainer > div {
-            margin-inline: 14%;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    
+    h3 {
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+      color: var(--heading-color, #2c3e50);
+      position: relative;
+      
+      &::after {
+        content: '';
+        display: block;
+        width: 60px;
+        height: 3px;
+        background: var(--primary-color);
+        margin-top: 0.5rem;
+        border-radius: 2px;
+      }
+    }
+    
+    .client {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      color: var(--primary-color);
+      font-weight: 500;
+    }
+    
+    .project-details {
+      display: flex;
+      flex-direction: column;
+      
+      @media (min-width: 768px) {
+        flex-direction: row;
+        gap: 2rem;
+      }
+      
+      .project-info {
+        flex: 2;
+        
+        p {
+          margin-bottom: 1.2rem;
+          color: var(--text-color, #34495e);
+          line-height: 1.8;
+          font-size: 1.05rem;
         }
-    }
-
-    @media screen and (min-width: 2560px) {
-        .projectsContainer > div {
-            margin-inline: auto;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        
+        strong {
+          color: var(--heading-color);
+          font-weight: 600;
+          margin-right: 0.25rem;
         }
+        
+        .tech-stack {
+          margin: 2rem 0 1rem;
+          
+          .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.75rem;
+          }
+          
+          .ant-tag {
+            margin: 0.2rem;
+            padding: 0.35rem 0.85rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            
+            &:hover {
+              transform: translateY(-2px);
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+            }
+          }
+        }
+      }
+      
+      .project-actions {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        
+        .ant-space {
+          width: 100%;
+          
+          .ant-btn {
+            width: 100%;
+            height: 46px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            transition: all 0.3s ease;
+            
+            &-primary {
+              background-color: var(--primary-color, #1677ff);
+              border: none;
+              
+              &:hover {
+                background-color: var(--primary-hover, #4096ff);
+                transform: translateY(-3px);
+                box-shadow: 0 7px 20px rgba(22, 119, 255, 0.25);
+              }
+            }
+            
+            &-default {
+              border: 2px solid var(--border-color, #d9d9d9);
+              color: var(--text-color, #34495e);
+              
+              &:hover {
+                border-color: var(--primary-color, #1677ff);
+                color: var(--primary-color, #1677ff);
+                transform: translateY(-3px);
+                box-shadow: 0 7px 20px rgba(0, 0, 0, 0.08);
+              }
+            }
+          }
+        }
+      }
     }
+    
+    .technologies {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border-color, #e8e8e8);
+      justify-content: center;
+      
+      .tech-icon {
+        flex: 0 0 auto;
+        transition: transform 0.2s ease;
+        width: 30px;
+        height: 30px;
+        margin: 0 0.75rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        &:hover {
+          transform: scale(1.2);
+        }
+        
+        svg {
+          height: 30px;
+          width: 30px;
+        }
+      }
+    }
+  }
+}
 
-    /* Add subtle hover effects */
-    .projectsContainer > div > div:hover {
-        transform: scale(1.05);
-        transition: transform 0.3s ease-in-out;
+// Dark mode adjustments
+.dark {
+  .projectsContainer {
+    .project-card {
+      background: var(--card-bg, #242c3d);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      
+      h3 {
+        color: var(--heading-color, #f8fafc);
+        
+        &::after {
+          background: var(--primary-color, #3b82f6);
+        }
+      }
+      
+      .client {
+        color: var(--primary-color, #3b82f6);
+      }
+      
+      .project-details .project-info p {
+        color: var(--text-color, #e2e8f0);
+      }
+      
+      .project-details .project-info strong {
+        color: var(--heading-color, #f8fafc);
+      }
+      
+      .tech-stack .ant-tag {
+        background-color: var(--primary-color, #3b82f6);
+        color: #fff;
+        border: none;
+      }
+      
+      .project-actions .ant-space .ant-btn-default {
+        border-color: var(--border-color, #334155);
+        color: var(--text-color, #e2e8f0);
+        
+        &:hover {
+          border-color: var(--primary-color, #3b82f6);
+          color: var(--primary-color, #3b82f6);
+        }
+      }
+      
+      .technologies {
+        border-top-color: var(--border-color, #334155);
+      }
     }
+    
+    .swiper-button-next, .swiper-button-prev {
+      color: var(--primary-color, #3b82f6);
+    }
+    
+    .swiper-pagination-bullet {
+      background: var(--secondary-text, #cbd5e1);
+      opacity: 0.5;
+      
+      &-active {
+        background: var(--primary-color, #3b82f6);
+        opacity: 1;
+      }
+    }
+  }
 }
