@@ -1,6 +1,6 @@
 const Autor = ({autor}) => {
     return ( 
-        <p className="autor">Created by {autor}</p>
+        <p className="autor">Created by {autor}©️</p>
     );
 }
 
