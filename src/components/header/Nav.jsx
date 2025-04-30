@@ -1,15 +1,12 @@
 
 import { useEffect, useState } from 'react';
-import Dark from '../../assets/svg/Dark';
 import './Nav.scss';
 
-const Nav = ({ setzeDenLightModus }) => {
+const Nav = ( ) => {
     const [activeSection, setActiveSection] = useState('home');
     const [scrolled, setScrolled] = useState(false);
 
-    const toggleLightMode = () => {
-        setzeDenLightModus(state => !state);
-    };
+
 
     useEffect(() => {
         const handleScroll = () => {
