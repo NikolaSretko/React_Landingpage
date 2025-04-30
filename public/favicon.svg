@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <!-- Background circle with white border -->
+  <circle cx="32" cy="32" r="30" fill="#f7f9fc" stroke="#ffffff" stroke-width="2" />
+  
+  <!-- SN text in blue -->
+  <text x="32" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#1677ff">SN.</text>
+</svg>
