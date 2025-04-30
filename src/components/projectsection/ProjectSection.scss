@@ -22,17 +22,35 @@
     }
   }
   
-  .project-swiper {
-    width: 100%;
-    height: auto;
-    padding-bottom: 3rem;
+  // .project-swiper {
+  //   width: 100%;
+  //   height: auto;
+  //   padding-bottom: 3rem;
     
-    .swiper-slide {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+  //   .swiper-slide {
+  //     display: flex;
+  //     justify-content: center;
+  //     align-items: center;
+  //   }
+  // }
+
+  .project-swiper {
+  .swiper-slide {
+    transition: filter 0.3s ease, transform 0.3s ease;
+
+    // Alle Slides leicht abdunkeln
+    filter: grayscale(30%) brightness(0.9);
   }
+  .swiper-slide:not(.swiper-slide-active) {
+  transform: scale(0.94);
+}
+
+  // Nur aktive Slide wieder auf hell & normal setzen
+  .swiper-slide-active {
+    filter: none;
+    z-index: 10;
+  }
+}
 
 .swiper {
   .swiper-slide {
