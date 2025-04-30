@@ -2,6 +2,7 @@
   padding: 5rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
+;
   
   .section-title {
     text-align: center;
@@ -32,6 +33,20 @@
       align-items: center;
     }
   }
+
+.swiper {
+  .swiper-slide {
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  .swiper-slide-shadow {
+    display: none !important;
+  }
+}
+
+
+
   
   .project-card {
     width: 100%;
