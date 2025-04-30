@@ -55,7 +55,7 @@ const ContactSection = () => {
           <Divider />
           
           <Paragraph className="contact-method">
-            <MailOutlined className="icon" /> nikola.sretkovic99@gmail.com
+            <MailOutlined className="icon" /> development@nikolasretkovic.info
           </Paragraph>
           
           <Paragraph className="availability">

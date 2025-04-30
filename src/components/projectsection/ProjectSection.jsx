@@ -45,10 +45,10 @@ const ProjectSection = () => {
       id: 2,
       title: "Skill-Matching App",
       client: "Vizionists GmbH",
-      description: "Entwicklung einer intelligenten Matching-Plattform zur Analyse und Empfehlung von Talenten für offene Positionen sowie zur Teamzusammenstellung im Unternehmen.",
-      challenge: "Abgleich individueller Skillsets und Persönlichkeitsmerkmale mit komplexen Jobanforderungen und bestehender Teamstruktur.",
+      description: "Im Rahmen eines Kundenprojekts für die Vizionists GmbH konzipierte und entwickelte ich eine voll funktionsfähige Weblösung zur KI-basierten Matching-Analyse. Zielgruppe sind Personaldienstleister und KMUs, die ihren Recruiting-Prozess datengestützt optimieren möchten.",
+      challenge: "Fullstack-Entwicklung from scratch (Konzeption, Architektur, Entwicklung, Deployment) Umsetzung mit MERN-Stack, Machine-Learning-Integration zur semantischen Analyse REST-API, Authentifizierung, rollenbasiertes Zugriffssystem, Git-Versionierung Fokus auf Skalierbarkeit, modulare Architektur und Clean Code",
       solution: "Entwicklung eines datengetriebenen Analyse-Tools mit KI-gestütztem Matching auf Basis von Skills und psychologischen Profilen zur Optimierung von Recruiting und Teamdynamik.",
-      techStack: ["React", "Node.js", "GraphQL", "MongoDB", "Stripe API","OpenAI API","REST API"],
+      techStack: ["React", "Node.js", "GraphQL", "MongoDB","OpenAI API","REST API"],
       videoUrl: "https://res.cloudinary.com/dxphdtwvh/video/upload/v1745921488/cc-match_cLYexN7W_j9mot0.mp4", // Platzhalter
       technologies: [<React key="react" />, <JavaScript key="javascript" />, <Sass key="sass" />]
     },
@@ -56,10 +56,10 @@ const ProjectSection = () => {
       id: 3,
       title: "Instagram Content & Reservierungstool",
       client: "Blue-Chip-Holding GmbH",
-      description: "Entwicklung eines Tools zur automatisierten Verwaltung von Instagram-Anfragen mit integriertem Reservierungssystem für Dienstleistungen.",
-      challenge: "Verarbeitung unstrukturierter Nachrichten, Zusammenführung fragmentierter Informationen und automatische Erstellung verfügbarer Buchungsoptionen.",
+      description: "Ich entwickelte ein intelligentes Tool zur Verwaltung von Terminen und Inhalten – im direkten Kundenauftrag der Blue-Chip-Holding. Ziel war die Automatisierung manueller Abläufe im Veranstaltungsmanagement.",
+      challenge: "Eigenverantwortlicher Aufbau der Anwendung mit React, Node.js, MongoDB Kalender-Logik, Benutzerverwaltung, dynamische Inhaltssteuerung per KI-Komponente Full-Deployment auf Render/Docker, API-Sicherheit via JWT",
       solution: " Entwicklung eines modularen Systems mit KI-gestützter Nachrichtenanalyse, Verfügbarkeitsprüfung und automatischer Terminvorschlagserstellung über eine interaktive Oberfläche.",
-      techStack: ["React", "Node.js", "MongoDB", "OpenAI API"],
+      techStack: ["React", "Node.js", "MongoDB", "OpenAI API","Stripe API"],
       videoUrl: "https://res.cloudinary.com/dxphdtwvh/video/upload/v1745924375/Bildschirmaufnahme_2025-04-24_um_14.54.43_c5ckud.mov", // Platzhalter
       technologies: [<React key="react" />, <JavaScript key="javascript" />, <MERN key="mern" /> ]
     }
@@ -99,11 +99,11 @@ const ProjectSection = () => {
                     {project.description}
                   </Paragraph>
                   <Paragraph>
-                    <Text strong>Herausforderung: </Text>
+                    <Text strong>Meine Rolle:</Text>
                     {project.challenge}
                   </Paragraph>
                   <Paragraph>
-                    <Text strong>Lösung: </Text>
+                    <Text strong>Ergebnis:</Text>
                     {project.solution}
                   </Paragraph>
                   
