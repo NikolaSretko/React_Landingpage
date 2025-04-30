@@ -2,8 +2,12 @@ import Autor from "./Autor";
 
 const Footer = () => {
     return ( 
-        <footer className="footerContainer">
-            <Autor autor="Nikola Sretkovic" className='autor'/>
+        <footer style={{ 
+            display: 'flex', 
+            justifyContent: 'center', 
+            alignItems: 'center', 
+        }}>
+            <Autor autor="Nikola Sretkovic" />
         </footer>
      );
 }
