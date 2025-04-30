@@ -11,7 +11,8 @@
   transition: all 0.3s ease;
   
   &.scrolled {
-    background-color: var(--card-bg);
+    background-color: rgba(247, 249, 252, 0.95);
+    backdrop-filter: blur(8px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     padding: 1rem 5%;
   }
@@ -19,7 +20,7 @@
   .logo {
     font-size: 1.75rem;
     font-weight: 700;
-    color: var(--primary-color);
+    color: #1677ff;
     text-decoration: none;
     transition: all 0.3s ease;
     
@@ -41,14 +42,14 @@
       a {
         font-size: 1rem;
         text-decoration: none;
-        color: var(--text-color);
+        color: #34495e;
         position: relative;
         transition: all 0.3s ease;
         font-weight: 500;
         padding-bottom: 5px;
         
         &:hover {
-          color: var(--primary-color);
+          color: #1677ff;
         }
         
         &::after {
@@ -58,7 +59,7 @@
           left: 0;
           width: 0;
           height: 2px;
-          background-color: var(--primary-color);
+          background-color: #1677ff;
           transition: width 0.3s ease;
           border-radius: 2px;
         }
@@ -68,20 +69,17 @@
         }
         
         &.active {
-          color: var(--primary-color);
+          color: #1677ff;
           font-weight: 600;
         }
-      }
-      
-      &.mode-toggle-container {
-        cursor: pointer;
-        display: flex;
-        align-items: center;
       }
     }
   }
   
+  /* Tablet styles */
   @media (max-width: 768px) {
+    padding: 1.2rem 5%;
+    
     .nav-links {
       li {
         margin-left: 1.5rem;
@@ -93,6 +91,7 @@
     }
   }
   
+  /* Mobile styles */
   @media (max-width: 576px) {
     padding: 1rem 5%;
     
@@ -102,10 +101,31 @@
     
     .nav-links {
       li {
-        margin-left: 1rem;
+        margin-left: 0.8rem;
         
         a {
           font-size: 0.8rem;
+          padding-bottom: 3px;
+        }
+      }
+    }
+  }
+  
+  /* Small mobile styles */
+  @media (max-width: 400px) {
+    padding: 0.8rem 4%;
+    
+    .logo {
+      font-size: 1.3rem;
+    }
+    
+    .nav-links {
+      li {
+        margin-left: 0.6rem;
+        
+        a {
+          font-size: 0.75rem;
+          letter-spacing: -0.2px;
         }
       }
     }
