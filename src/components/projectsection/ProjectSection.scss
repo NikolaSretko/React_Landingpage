@@ -34,21 +34,25 @@
   //   }
   // }
 
-  .project-swiper {
+.project-swiper {
   .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    overflow: hidden; // Wichtig für runde Ecken bei Schatten
     transition: filter 0.3s ease, transform 0.3s ease;
-
-    // Alle Slides leicht abdunkeln
     filter: grayscale(30%) brightness(0.9);
   }
-  .swiper-slide:not(.swiper-slide-active) {
-  transform: scale(0.94);
-}
 
-  // Nur aktive Slide wieder auf hell & normal setzen
   .swiper-slide-active {
     filter: none;
+    transform: scale(1);
     z-index: 10;
+  }
+
+  .swiper-slide:not(.swiper-slide-active) {
+    transform: scale(0.94);
   }
 }
 
@@ -75,6 +79,7 @@
     border-radius: 12px;
     overflow: hidden;
     transition: transform 0.3s ease;
+    
     
     &:hover {
       transform: translateY(-5px);
