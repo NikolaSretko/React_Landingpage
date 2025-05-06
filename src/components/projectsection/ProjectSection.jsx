@@ -31,6 +31,28 @@ const ProjectSection = () => {
   const projectData = [
     {
       id: 1,
+      title: "Skill-Matching App",
+      client: "Vizionists GmbH",
+      description: "Im Rahmen eines Kundenprojekts für die Vizionists GmbH konzipierte und entwickelte ich eine voll funktionsfähige Weblösung zur KI-basierten Matching-Analyse. Zielgruppe sind Personaldienstleister und KMUs, die ihren Recruiting-Prozess datengestützt optimieren möchten.",
+      challenge: "Fullstack-Entwicklung from scratch (Konzeption, Architektur, Entwicklung, Deployment) Umsetzung mit MERN-Stack, Machine-Learning-Integration zur semantischen Analyse REST-API, Authentifizierung, rollenbasiertes Zugriffssystem, Git-Versionierung Fokus auf Skalierbarkeit, modulare Architektur und Clean Code",
+      solution: "Entwicklung eines datengetriebenen Analyse-Tools mit KI-gestütztem Matching auf Basis von Skills und psychologischen Profilen zur Optimierung von Recruiting und Teamdynamik.",
+      techStack: ["React", "Node.js", "GraphQL", "MongoDB","OpenAI API","REST API"],
+      videoUrl: "https://res.cloudinary.com/dxphdtwvh/video/upload/v1745921488/cc-match_cLYexN7W_j9mot0.mp4", // Platzhalter
+      technologies: [<React key="react" />, <JavaScript key="javascript" />,<MERN key="mern" />]
+    },
+    {
+      id: 2,
+      title: "Instagram Content & Reservierungstool",
+      client: "Blue-Chip-Holding GmbH",
+      description: "Ich entwickelte ein intelligentes Tool zur Verwaltung von Terminen und Inhalten – im direkten Kundenauftrag der Blue-Chip-Holding. Ziel war die Automatisierung manueller Abläufe im Veranstaltungsmanagement.",
+      challenge: "Eigenverantwortlicher Aufbau der Anwendung mit React, Node.js, MongoDB Kalender-Logik, Benutzerverwaltung, dynamische Inhaltssteuerung per KI-Komponente Full-Deployment auf Render/Docker, API-Sicherheit via JWT",
+      solution: " Entwicklung eines modularen Systems mit KI-gestützter Nachrichtenanalyse, Verfügbarkeitsprüfung und automatischer Terminvorschlagserstellung über eine interaktive Oberfläche.",
+      techStack: ["React", "Node.js", "MongoDB", "OpenAI API","Stripe API"],
+      videoUrl: "https://res.cloudinary.com/dxphdtwvh/video/upload/v1745924375/Bildschirmaufnahme_2025-04-24_um_14.54.43_c5ckud.mov", // Platzhalter
+      technologies: [<React key="react" />, <JavaScript key="javascript" />, <MERN key="mern" /> ]
+    },
+    {
+      id: 3,
       title: "TOKTOK (Mobile)",
       client: "Abschlussprojekt",
       description: "Unsere mobile App, gebaut im MERN-Stack, bietet eine sichere und skalierbare App zum Teilen von Fotos.",
@@ -40,28 +62,6 @@ const ProjectSection = () => {
       repoUrl: "https://github.com/canyus70/FullStack-Abschluss-Projekt-TokTok",
       liveUrl: "https://toktok-nks4.onrender.com/",
       technologies: [<Sass key="sass" />, <React key="react" />, <MERN key="mern" />]
-    },
-    {
-      id: 2,
-      title: "Skill-Matching App",
-      client: "Vizionists GmbH",
-      description: "Im Rahmen eines Kundenprojekts für die Vizionists GmbH konzipierte und entwickelte ich eine voll funktionsfähige Weblösung zur KI-basierten Matching-Analyse. Zielgruppe sind Personaldienstleister und KMUs, die ihren Recruiting-Prozess datengestützt optimieren möchten.",
-      challenge: "Fullstack-Entwicklung from scratch (Konzeption, Architektur, Entwicklung, Deployment) Umsetzung mit MERN-Stack, Machine-Learning-Integration zur semantischen Analyse REST-API, Authentifizierung, rollenbasiertes Zugriffssystem, Git-Versionierung Fokus auf Skalierbarkeit, modulare Architektur und Clean Code",
-      solution: "Entwicklung eines datengetriebenen Analyse-Tools mit KI-gestütztem Matching auf Basis von Skills und psychologischen Profilen zur Optimierung von Recruiting und Teamdynamik.",
-      techStack: ["React", "Node.js", "GraphQL", "MongoDB","OpenAI API","REST API"],
-      videoUrl: "https://res.cloudinary.com/dxphdtwvh/video/upload/v1745921488/cc-match_cLYexN7W_j9mot0.mp4", // Platzhalter
-      technologies: [<React key="react" />, <JavaScript key="javascript" />, <Sass key="sass" />]
-    },
-    {
-      id: 3,
-      title: "Instagram Content & Reservierungstool",
-      client: "Blue-Chip-Holding GmbH",
-      description: "Ich entwickelte ein intelligentes Tool zur Verwaltung von Terminen und Inhalten – im direkten Kundenauftrag der Blue-Chip-Holding. Ziel war die Automatisierung manueller Abläufe im Veranstaltungsmanagement.",
-      challenge: "Eigenverantwortlicher Aufbau der Anwendung mit React, Node.js, MongoDB Kalender-Logik, Benutzerverwaltung, dynamische Inhaltssteuerung per KI-Komponente Full-Deployment auf Render/Docker, API-Sicherheit via JWT",
-      solution: " Entwicklung eines modularen Systems mit KI-gestützter Nachrichtenanalyse, Verfügbarkeitsprüfung und automatischer Terminvorschlagserstellung über eine interaktive Oberfläche.",
-      techStack: ["React", "Node.js", "MongoDB", "OpenAI API","Stripe API"],
-      videoUrl: "https://res.cloudinary.com/dxphdtwvh/video/upload/v1745924375/Bildschirmaufnahme_2025-04-24_um_14.54.43_c5ckud.mov", // Platzhalter
-      technologies: [<React key="react" />, <JavaScript key="javascript" />, <MERN key="mern" /> ]
     }
   ];
 
@@ -119,7 +119,7 @@ const ProjectSection = () => {
                 
                 <div className="project-actions">
                   <Space direction="vertical">
-                    {project.id !== 1 && (
+                    {project.id !== 3 && (
                       <Button 
                         type="primary" 
                         onClick={() => showVideoModal(project.videoUrl)}
@@ -128,7 +128,7 @@ const ProjectSection = () => {
                       </Button>
                     )}
                     
-                    {project.id === 1 && (
+                    {project.id === 3 && (
                       <>
                         <Button 
                           type="primary" 
