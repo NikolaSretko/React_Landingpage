@@ -38,7 +38,7 @@ const ProjectSection = () => {
       solution: "Entwicklung eines datengetriebenen Analyse-Tools mit KI-gestütztem Matching auf Basis von Skills und psychologischen Profilen zur Optimierung von Recruiting und Teamdynamik.",
       techStack: ["React", "Node.js", "GraphQL", "MongoDB","OpenAI API","REST API"],
       videoUrl: "https://res.cloudinary.com/dxphdtwvh/video/upload/v1745921488/cc-match_cLYexN7W_j9mot0.mp4", // Platzhalter
-      technologies: [<React key="react" />, <JavaScript key="javascript" />,<MERN key="mern" />]
+      technologies: [<React key="react" />, <JavaScript key="javascript" />,<MERN key="mern" />,<Sass key="sass" />]
     },
     {
       id: 2,
